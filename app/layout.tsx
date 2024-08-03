@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Khmer, Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/base/Header";
-import Footer from "@/components/base/Footer";
-
+import './globals.css'
 const khmer = Khmer({
   subsets: ["khmer"],
   weight: ['400'],
@@ -28,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body data-theme="light" className={`${khmer.className} ${khmer.variable} ${poppins.variable} xl:px-48 flex min-h-screen flex-col p-4`}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -49,15 +49,15 @@ const Header = () => {
                     <div className='flex items-center flex-row mb-5' >
                         <TbLoaderQuarter size={32} color='#023047' />
                         <span className='font-poppins text-xl font-bold' >
-                            <a href="/" className='border-b-0 active:bg-none' >Loader</a>
+                            <a href="/home" className='border-b-0 active:bg-none' >Loader</a>
                         </span>
                     </div>
                     {/* Sidebar content here */}
                     <li className='mb-2' >
-                        <a href="/"
+                        <a href="/home"
                             className={`font-poppins
                             flex flex-row items-center text-base
-                            ${pathname === '/' && 'active'}`}
+                            ${pathname === '/home' && 'active'}`}
                         >
                             <MdSubscriptions />
                             <span>Subscribe</span>

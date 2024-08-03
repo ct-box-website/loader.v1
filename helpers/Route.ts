@@ -1,7 +1,7 @@
 const Routes = [
     {
         id: 1,
-        path: '/',
+        path: '/home',
         component: 'Subscribe',
         status: true
     },
