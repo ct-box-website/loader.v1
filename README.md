@@ -14,6 +14,10 @@ pnpm dev
 bun dev
 ```
 
+## Use fonts
+<p className="text-2xl text-center font-poppins">Poppin This is Poppins Font from Google </p>
+<p className="font-khmer" >នេះជាម៉ូតអក្សរខ្មែរមួយមកពី Google</p>
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
