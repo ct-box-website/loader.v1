@@ -11,7 +11,7 @@ const LoginPage = () => {
         <div className='grid lg:grid-cols-2 grid-cols-1' >
             {/* Form */}
             <div
-                className='font-poppins flex flex-col justify-center lg:p-16 xl:p-36 md:p-36 p-10 gap-y-4'
+                className='font-poppins flex flex-col justify-center lg:px-16 xl:px-36 md:px-36 p-10 gap-y-4'
             >
                 <Logo />
 
