@@ -44,6 +44,25 @@ const config: Config = {
         lightorange: "#ff8500",
         lightpurple: "#8338ec",
         lightpink: "#ff006e"
+      },
+      borderColor: {
+        primary: "#023047",
+        secondary: "#219ebc",
+        tertiary: "#8ecae6",
+        quaternary: "#fb8500",
+        sucess: "#3a86ff",
+        error: "#ff006e",
+        pendding: "#8338ec",
+        white: "#ffffff",
+        black: "#000000",
+        gray: "#f8f9fa",
+        lightgray: "#e9ecef",
+        darkgray: "#343a40",
+        lightblue: "#8ecae6",
+        lightgreen: "#82e0aa",
+        lightorange: "#ff8500",
+        lightpurple: "#8338ec",
+        lightpink: "#ff006e"
       }
     },
   },

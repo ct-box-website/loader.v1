@@ -29,7 +29,7 @@ const Header = () => {
                             {routes.map((route, index) => (
                                 <li key={index}>
                                     {route.path === '/login'
-                                        ? <a href={route.path} className='bg-primary text-white px-5 py-2 rounded-md font-light' >{route.component}</a>
+                                        ? <a href={route.path} className='bg-primary hover:bg-secondary transition-all duration-150 ease-linear text-white px-5 py-2 rounded-md font-light' >{route.component}</a>
                                         : <a href={route.path} className={`hover:text-secondary transition-all duration-150 ease-linear ${route.path === pathname && 'text-primary font-medium'} `} >{route.component}</a>
                                     }
                                 </li>

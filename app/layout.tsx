@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body data-theme="light" className={`${khmer.className} ${khmer.variable} ${poppins.variable} xl:px-48 flex min-h-screen flex-col p-4`}>
+      <body data-theme="light" className={`${khmer.className} ${khmer.variable} ${poppins.variable}`}>
         {children}
       </body>
     </html>
