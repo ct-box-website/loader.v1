@@ -5,9 +5,11 @@ import { TbLoaderQuarter } from 'react-icons/tb'
 import { usePathname } from 'next/navigation'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { MdSubscriptions } from 'react-icons/md'
-import { IoBookSharp } from 'react-icons/io5'
+import { IoBookSharp, IoHome } from 'react-icons/io5'
 import { BiSolidContact } from 'react-icons/bi'
 import { FaInfoCircle } from 'react-icons/fa'
+import { FiLogIn } from 'react-icons/fi'
+import Logo from '../assets/Logo'
 const Header = () => {
     const routes = useMemo(() => Routes, [])
     const pathname = usePathname();
@@ -16,14 +18,7 @@ const Header = () => {
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 <div className='p-2 w-full flex flex-row justify-between items-center'>
-                    <div
-                        className='flex flex-row items-center'
-                    >
-                        <TbLoaderQuarter size={32} color='#023047' />
-                        <p
-                            className='font-poppins text-primary text-2xl font-semibold'
-                        >Loader</p>
-                    </div>
+                    <Logo />
                     <div className='font-poppins md:block hidden' >
                         <ul className='flex flex-row items-center gap-x-6' >
                             {routes.map((route, index) => (
@@ -59,6 +54,16 @@ const Header = () => {
                             flex flex-row items-center text-base
                             ${pathname === '/home' && 'active'}`}
                         >
+                            <IoHome />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li className='mb-2' >
+                        <a href="/subscribe"
+                            className={`font-poppins
+                            flex flex-row items-center text-base
+                            ${pathname === '/subscribe' && 'active'}`}
+                        >
                             <MdSubscriptions />
                             <span>Subscribe</span>
                         </a>
@@ -92,6 +97,16 @@ const Header = () => {
                         >
                             <FaInfoCircle />
                             <span>About</span>
+                        </a>
+                    </li>
+                    <li className='mb-2' >
+                        <a href="/login"
+                            className={`font-poppins
+                            flex flex-row items-center text-base
+                            `}
+                        >
+                            <FiLogIn />
+                            <span>Login</span>
                         </a>
                     </li>
                 </ul>
