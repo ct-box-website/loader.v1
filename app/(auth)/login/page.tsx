@@ -46,7 +46,7 @@ const LoginPage = () => {
                 <Button
                     title='Login'
                 />
-                <p className='text-center text-sm' >Don't have an account? <a href='/register' className='text-secondary font-medium' >Sign up</a></p>
+                <p className='text-center text-sm' >Don&apos;t have an account? <a href='/register' className='text-secondary font-medium' >Sign up</a></p>
 
             </div>
             <div className='hidden lg:block' >
