@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import SpecialOffer from "@/components/home/SpecialOffer";
 import Summary from "@/components/home/Summary";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
             className="flex min-h-screen flex-col p-4">
             <Hero />
             <Summary />
+            <SpecialOffer />
         </main>
     );
 }
